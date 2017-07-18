@@ -7204,8 +7204,10 @@
       }
 
       $video.addClass('note-video-clip');
+      var $embed = $('<div>').addClass('videoWrapper');
+      $video.appendTo($embed);
 
-      return $video[0];
+      return $embed[0];
     };
 
     this.show = function () {
