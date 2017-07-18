@@ -126,6 +126,7 @@ define([
         return false;
       }
 
+      $video.addClass('note-video-clip');
       var $embed = $('<div>').addClass('videoWrapper');
       $video.appendTo($embed);
 
